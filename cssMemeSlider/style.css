@@ -20,7 +20,7 @@ h2 {
 
 /*SLIDER*/
 .slider {
-    position: relative;
+    position: static;
     margin: 0 auto;
     width: 55%;
     overflow: hidden;
@@ -34,6 +34,7 @@ h2 {
 .slider input {
     display: none;
 }
+
 
 .slider img {
     height: 70%;
@@ -49,18 +50,20 @@ h2 {
     align-items: center;
     margin-top: 1%;
 }
-
+.bottom__title{
+  width: 80%;
+}
 .bottom__pagination {
     display: flex;
     justify-content: center;
-    margin-left: 2%;
+    padding-right: 3%;
 }
 
 .bottom__pagination label {
     margin: 5%;
-    height: 3vh;
-    width: 3vw;
-    border-radius: 50%;
+    height: 2vh;
+    width: 1.3vw;
+    border-radius: 100%;
     border: solid #fff200 1%;
     background-color: #fff200;
     cursor: pointer;
@@ -71,6 +74,12 @@ h2 {
     border: solid #ffffff 1%;
     background-color: #fff;
 }
+
+.bottom__pagination label > span{
+    padding: 20px;
+    cursor: pointer;
+}
+
 
 /*SLIDER FUNCTIONALITY*/
 #img1:checked~.item1 {
