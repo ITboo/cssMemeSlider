@@ -18,6 +18,9 @@ h2 {
     font-size: 150%;
 }
 
+.text{
+    color: white;
+}
 /*SLIDER*/
 .slider {
     position: static;
