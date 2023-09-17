@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #141414;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #fff;
+    font-size: 150%;
+}
+
+.text{
+    color: white;
+}
+/*SLIDER*/
+.slider {
+    position: static;
+    margin: 0 auto;
+    width: 55%;
+    overflow: hidden;
+}
+
+.slider__images {
+    display: flex;
+    width: 100%;
+}
+
+.slider input {
+    display: none;
+}
+
+
+.slider img {
+    height: 70%;
+    width: 100%;
+    border-radius: 1%;
+    transition: all 1s ease;
+}
+
+/*BOTTOM*/
+.slider__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+.bottom__title{
+  width: 80%;
+}
+.bottom__pagination {
+    display: flex;
+    justify-content: center;
+    padding-right: 3%;
+}
+
+.bottom__pagination label {
+    margin: 5%;
+    height: 2vh;
+    width: 1.3vw;
+    border-radius: 100%;
+    border: solid #fff200 1%;
+    background-color: #fff200;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bottom__pagination label:hover {
+    border: solid #ffffff 1%;
+    background-color: #fff;
+}
+
+.bottom__pagination label > span{
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+/*SLIDER FUNCTIONALITY*/
+#img1:checked~.item1 {
+    margin-left: 0;
+}
+
+#img2:checked~.item1 {
+    margin-left: -100%;
+}
+
+#img2:checked~.item2 {
+    margin-left: 0;
+}
+
+#img3:checked~.item1 {
+    margin-left: -200%;
+}
+
+#img3:checked~.item3 {
+    margin-left: 0;
+}
+
+#img4:checked~.item1 {
+    margin-left: -300%;
+}
+
+#img4:checked~.item4 {
+    margin-left: 0;
+}
+
+/*MEDIA*/
+@media (max-width: 1000px) {
+    .slider {
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 120%;
+        text-align: center;
+    }
+
+    .slider__bottom {
+        flex-direction: column;
+    }
+
+    .bottom__pagination label {
+        height: 2.5vh;
+        width: 3.5vw;
+    }
+}
+
+@media (max-width: 925px) {
+    .slider {
+        width: 75%;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+
+    .bottom__pagination label {
+        height: 2.5vh;
+        width: 5.5vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .slider {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 80%;
+    }
+
+    .bottom__pagination label {
+        height: 2.5vh;
+        width: 5.5vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .slider {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 80%;
+    }
+
+    .bottom__pagination label {
+        height: 1.5vh;
+        width: 5.5vw;
+    }
+}
