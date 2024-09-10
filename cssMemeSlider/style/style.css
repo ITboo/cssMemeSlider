@@ -1,0 +1,20 @@
+:root {
+  --bg-color: black;
+  --text-color: white;
+  --accent-color: yellow;
+
+  --text-size-s: 14px;
+  --text-size-l: 18px;
+  --text-size-l: 22px;
+
+  --text-line-s: 1.15;
+  --text-line-m: 1.2;
+  --text-line-l: 1.25;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
