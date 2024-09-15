@@ -1,4 +1,3 @@
-
 #first:checked ~ .slider__images .slider__images-wrapper,
 #first:checked ~ .slider__text .slider__phrases-wrapper {
   transform: translateX(0);

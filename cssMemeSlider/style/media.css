@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+  .header__title {
+    text-align: center;
+  }
+  .slider {
+    justify-content: center;
+  }
+  .slider__text {
+    flex-wrap: wrap;
+
+    justify-content: center;
+    row-gap: 1rem;
+  }
+  .slider__phrases {
+    order: 2;
+    width: 100%;
+  }
+  .pagination {
+    margin: 0 auto;
+    gap: 10px;
+    width: 80%;
+  }
+  .footer__wrapper {
+    width: 100wh;
+    font-size: var(--text-size-s);
+  }
+}
